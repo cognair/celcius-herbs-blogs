@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProbioticsForDogsGuideIsland from "../islands/blog/ProbioticsForDogsGuide";
+import {
+  buildProbioticsForDogsFaqJsonLd,
+  buildProbioticsForDogsArticleJsonLd,
+} from "../lib/blog/probiotics-for-dogs-faqs";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    buildProbioticsForDogsArticleJsonLd(),
+    buildProbioticsForDogsFaqJsonLd(),
+  ],
+};
+---
+
+<Layout
+  title="Probiotics for Dogs: What the Research Shows"
+  description="Probiotics for dogs explained strain by strain, with dosage by weight, forms compared, and a vet-reviewed product table."
+  canonical="https://blog.celsiusherbs.com/probiotics-for-dogs"
+  ogType="article"
+  ogImage="https://blog.celsiusherbs.com/og/probiotics-for-dogs.webp"
+  jsonLd={jsonLd}
+>
+  <ProbioticsForDogsGuideIsland client:load />
+</Layout>
