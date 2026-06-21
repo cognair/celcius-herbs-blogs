@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ApoquelSideEffectsInDogsGuideIsland from "../islands/blog/ApoquelSideEffectsInDogsGuide";
+import {
+  buildApoquelSideEffectsInDogsFaqJsonLd,
+  buildApoquelSideEffectsInDogsArticleJsonLd,
+} from "../lib/blog/apoquel-side-effects-in-dogs-faqs";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    buildApoquelSideEffectsInDogsArticleJsonLd(),
+    buildApoquelSideEffectsInDogsFaqJsonLd(),
+  ],
+};
+---
+
+<Layout
+  title="Apoquel Side Effects in Dogs: The Complete Guide"
+  description="Apoquel side effects in dogs explained from the FDA label — common, serious, long-term immune risks, cancer evidence, and 8 ranked natural alternatives."
+  canonical="https://blog.celsiusherbs.com/apoquel-side-effects-in-dogs"
+  ogType="article"
+  ogImage="https://blog.celsiusherbs.com/og/apoquel-side-effects-in-dogs.webp"
+  jsonLd={jsonLd}
+>
+  <ApoquelSideEffectsInDogsGuideIsland client:load />
+</Layout>
