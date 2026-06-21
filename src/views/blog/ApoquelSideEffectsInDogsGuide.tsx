@@ -254,7 +254,7 @@ export default function ApoquelSideEffectsInDogsGuide() {
         </div>
         <div className="relative h-64 overflow-hidden sm:h-80 lg:h-96">
           <img
-            src={hero.src}
+            src={hero}
             alt="Golden retriever scratching with worried owner beside it"
             className="h-full w-full object-cover opacity-80"
             loading="eager"
@@ -318,7 +318,7 @@ export default function ApoquelSideEffectsInDogsGuide() {
             </div>
 
             <img
-              src={imgMechanism.src}
+              src={imgMechanism}
               alt="JAK enzyme pathway diagram showing how oclacitinib blocks cytokine signalling"
               className="mb-6 h-56 w-full rounded-xl object-cover sm:h-72"
               loading="lazy"
@@ -398,7 +398,7 @@ export default function ApoquelSideEffectsInDogsGuide() {
             </p>
 
             <img
-              src={imgSideEffects.src}
+              src={imgSideEffects}
               alt="Veterinarian reviewing bloodwork with concerned dog owner"
               className="mb-6 h-56 w-full rounded-xl object-cover sm:h-72"
               loading="lazy"
@@ -581,7 +581,7 @@ export default function ApoquelSideEffectsInDogsGuide() {
             </p>
 
             <img
-              src={imgAlternatives.src}
+              src={imgAlternatives}
               alt="Natural supplement bottles arranged on white marble with dog in background"
               className="mb-6 h-56 w-full rounded-xl object-cover sm:h-72"
               loading="lazy"
@@ -629,7 +629,7 @@ export default function ApoquelSideEffectsInDogsGuide() {
             </p>
 
             <img
-              src={imgCytopoint.src}
+              src={imgCytopoint}
               alt="Veterinarian administering Cytopoint injection to a calm Labrador"
               className="mb-6 h-56 w-full rounded-xl object-cover sm:h-72"
               loading="lazy"
