@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MangeInDogsGuideIsland from "../islands/blog/MangeInDogsGuide";
+import {
+  buildMangeInDogsFaqJsonLd,
+  buildMangeInDogsArticleJsonLd,
+} from "../lib/blog/mange-in-dogs-faqs";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    buildMangeInDogsArticleJsonLd(),
+    buildMangeInDogsFaqJsonLd(),
+  ],
+};
+---
+
+<Layout
+  title="Mange in Dogs: Symptoms, Natural Remedies, and When to Call the Vet"
+  description="Mange in dogs explained — sarcoptic vs demodectic symptoms, apple cider vinegar and neem oil protocols, and when prescription treatment is the only option."
+  canonical="https://blog.celsiusherbs.com/mange-in-dogs"
+  ogType="article"
+  ogImage="https://blog.celsiusherbs.com/og/mange-in-dogs.webp"
+  jsonLd={jsonLd}
+>
+  <MangeInDogsGuideIsland client:load />
+</Layout>

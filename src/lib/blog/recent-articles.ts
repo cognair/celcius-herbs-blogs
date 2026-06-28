@@ -1,6 +1,7 @@
 export type BlogArticle = { href: string; label: string };
 
 export const BLOG_ARTICLES: BlogArticle[] = [
+  { href: "/mange-in-dogs", label: "Mange in Dogs: Natural Remedies & Vet Care" },
   { href: "/can-dogs-eat-watermelon", label: "Can Dogs Eat Watermelon?" },
   { href: "/can-dogs-eat-blueberries", label: "Can Dogs Eat Blueberries?" },
   { href: "/can-dogs-eat-broccoli", label: "Can Dogs Eat Broccoli?" },
